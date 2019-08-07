@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes: 
+      - ./Frontend/dist/appName:/usr/share/nginx/html/frontend
+      - ./Backend:/usr/share/nginx/html/backend
+      - ./Config/nginx/nginx.conf:/etc/nginx/nginx.conf
+    links:
+      - php
+  php:
+    build: ./Config/php/
+    volumes:
+      - ./Backend:/usr/share/nginx/html/backend

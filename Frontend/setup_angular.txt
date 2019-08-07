@@ -1,0 +1,13 @@
+I'm assuming you already have Angular CLI installed on your device
+To create your new Angular app use the commands below :
+
+cd /Frontend
+ng new appName --directory .
+
+WARNING !! If you change the name of the app, you have to update the path in the docker-compose.yml replacing "appName" by the new name you just entered
+
+For compiling, use :
+
+cd /Frontend
+ng build --watch 
+
