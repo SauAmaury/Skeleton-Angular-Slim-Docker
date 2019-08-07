@@ -6,7 +6,7 @@ It's very easy to setup and you can start coding in less than 5 minutes
 
 ## How to make it work
 
-Just initialize Angular in the /Frontend directory, to do so just read the little guide (setup_angular.txt) in this folder
+Just initialize Angular in the /Frontend directory, to do so, just read the little guide (setup_angular.txt) in this folder
 
 After that you can launch your project with :
 
@@ -19,17 +19,17 @@ http://localhost (For Angular)
 http://localhost:8080 (For Slim)
 http://localhost:8080/info will show you the function phpinfo() output 
 
-### Info About Slim
+### Infos About Slim
 
 Slim is at 4.0 version, and was installed by composer.
 In this project composer use the psr-4 autoload method.
-So, if you add new classes to your Slim project mare sure to have composer installed on your device, so yo can run :
+So, if you add new classes to your Slim project make sure to have composer installed on your device, so you can run :
 
 `composer dump-autoload -o`
 
 ### Issues which might appear
 
-As we are running Slim on a different server from Angular, you can encounter CORS Error while making query from Angulaur to Slim
+As we are running Slim on a different server from Angular, you can encounter CORS Error while making query from Angular to Slim
 
 This article should help you  : 
 
